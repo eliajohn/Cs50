@@ -1,4 +1,4 @@
-CS50 –Projekte von eliajohn
+CS50 Projekte von eliajohn
 
 Dieses Repository enthält Lösungen zu Aufgaben aus dem Harvard-Kurs CS50.
 
