@@ -1,0 +1,64 @@
+Coin Change Calculator (Greedy Algorithm)
+Dieses kleine C-Programm berechnet die minimale Anzahl an Münzen, die für ein gegebenes Wechselgeld (in Cent) benötigt wird. Es basiert auf dem Greedy-Algorithmus und wurde im Stil der bekannten CS50-Problemstellungen entwickelt.
+
+📋 Beschreibung
+Das Programm fragt den Benutzer nach einem positiven Betrag an Wechselgeld (in Cents). Es berechnet dann die minimale Anzahl an US-Münzen (Quarters, Dimes, Nickels und Pennies), die diesen Betrag genau ergeben.
+
+Verwendete Münzen:
+
+Quarters (25¢)
+
+Dimes (10¢)
+
+Nickels (5¢)
+
+Pennies (1¢)
+
+Dabei kommt der Greedy-Algorithmus zum Einsatz: Es wird stets die größte Münze gewählt, die noch in den Restbetrag passt.
+
+🛠️ Aufbau
+Funktionen
+calculate_quarters(int cents)
+
+calculate_dimes(int cents)
+
+calculate_nickels(int cents)
+
+calculate_pennies(int cents)
+
+Jede Funktion gibt zurück, wie viele Münzen des jeweiligen Typs in den übergebenen cents enthalten sind.
+
+Beispielablauf
+bash
+Kopieren
+Bearbeiten
+$ ./coins
+Change owed: 41
+total_conis: 4?
+Erklärung: 1 Quarter (25¢) + 1 Dime (10¢) + 1 Nickel (5¢) + 1 Penny (1¢) = 4 Münzen
+
+🧪 Beispielwerte
+Eingabe (Cents)	Ausgabe (total_conis)
+99	9
+0	0
+41	4
+17	3
+
+📦 Kompilierung
+Zum Kompilieren des Programms:
+
+bash
+Kopieren
+Bearbeiten
+clang -o coins coins.c -lcs50
+Hinweis: Das cs50.h-Header wird verwendet und benötigt die CS50-Bibliothek.
+
+📝 Hinweise
+Das Programm nutzt eine einfache Implementierung der Greedy-Strategie.
+
+Die Konstante 05 bei nickels kann einfach zu 5 geändert werden – führende Nullen deuten sonst auf Oktalzahlen hin.
+
+Der Print-Befehl printf("total_conis: %i?\n", total_conis); enthält ein Fragezeichen – ggf. anpassen zu einem informativen Text wie: Total coins:
+
+📚 Ursprung
+Dieses Projekt basiert auf einer Übungsaufgabe aus dem Harvard CS50-Kurs
